@@ -50,10 +50,12 @@ export default function ContactPage() {
             <iframe
               src={`${CALENDLY_URL}?hide_gdpr_banner=1`}
               width="100%"
-              height="700"
+              height="750"
               frameBorder="0"
+              scrolling="no"
               title="Schedule a Discovery Call with Stefan Markovic"
               className="w-full"
+              style={{ minHeight: '750px' }}
             />
           </div>
         </div>
