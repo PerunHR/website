@@ -1,6 +1,6 @@
 export const GA_MEASUREMENT_ID = 'G-YLKTHF3NZ7'
 
-export const CALENDLY_URL = 'https://calendly.com/stefan-perunhr/discovery'
+export const CALENDLY_URL = 'https://calendly.com/stefan-markovic-perunhr/meeting'
 export const LINKEDIN_URL = 'https://linkedin.com/in/stefan-markovic-perunhr'
 export const EMAIL = 'stefan.markovic@perunhr.com'
 
