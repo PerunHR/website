@@ -1,9 +1,37 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
+import { Navbar } from '@/components/Navbar'
+import { ThemeSwitcher } from '@/components/ThemeSwitcher'
+import { FloatingCTA } from '@/components/FloatingCTA'
+import { Analytics } from '@/components/Analytics'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'PerunHR - Expert Staffing Solutions',
-  description: 'PerunHR provides expert staffing and HR solutions for businesses across Europe.',
+  title: 'PerunHR — Battle-Tested DTC Talent Recruitment',
+  description:
+    'I reject 90% of candidates. The 10% I send scale DTC brands. Battle-tested global talent for DTC brands scaling $500K-$3M+/month.',
+  openGraph: {
+    title: 'PerunHR — Battle-Tested DTC Talent Recruitment',
+    description:
+      'I reject 90% of candidates. The 10% I send scale DTC brands. Global talent for DTC brands scaling $500K-$3M+/month.',
+    url: 'https://perunhr.com',
+    siteName: 'PerunHR',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PerunHR — Battle-Tested DTC Talent Recruitment',
+    description:
+      'I reject 90% of candidates. The 10% I send scale DTC brands.',
+  },
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({
@@ -12,8 +40,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <body>
+        <Navbar />
+        {children}
+        <FloatingCTA />
+        <ThemeSwitcher />
+        <Analytics />
+      </body>
     </html>
   )
 }
