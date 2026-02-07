@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { CALENDLY_URL, LINKEDIN_URL, EMAIL } from '@/lib/constants'
 import { Footer } from '@/components/Footer'
 
@@ -47,15 +48,14 @@ export default function ContactPage() {
 
           {/* Calendly Embed */}
           <div className="bg-card-bg border border-card-border rounded-md overflow-hidden shadow-lg">
-            <iframe
-              src={`${CALENDLY_URL}?hide_gdpr_banner=1`}
-              width="100%"
-              height="750"
-              frameBorder="0"
-              scrolling="no"
-              title="Schedule a Discovery Call with Stefan Markovic"
-              className="w-full"
-              style={{ minHeight: '750px' }}
+            <div 
+              className="calendly-inline-widget" 
+              data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=1a1f2e&text_color=f0f0f0&primary_color=d4af37`}
+              style={{ minWidth: '320px', height: '700px' }}
+            />
+            <Script 
+              src="https://assets.calendly.com/assets/external/widget.js" 
+              strategy="lazyOnload"
             />
           </div>
         </div>
