@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
-import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 import { FloatingCTA } from '@/components/FloatingCTA'
 import { Analytics } from '@/components/Analytics'
 
@@ -40,12 +39,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html lang="en" data-theme="green" className={inter.variable}>
       <body>
         <Navbar />
         {children}
         <FloatingCTA />
-        <ThemeSwitcher />
         <Analytics />
       </body>
     </html>

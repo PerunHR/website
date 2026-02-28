@@ -68,7 +68,7 @@ export default function AboutPage() {
                     Head of Talent for a US DTC brand
                   </span>
                   . I know exactly what it takes to find and vet people who can
-                  actually scale a direct-to-consumer business &mdash; because
+                  actually scale a direct-to-consumer business because
                   I do it every day.
                 </p>
                 <p>
@@ -137,18 +137,11 @@ export default function AboutPage() {
             </blockquote>
 
             <p className="reveal">
-              Every candidate goes through the same rigorous process I use in my
-              day job. Not a quick phone screen and a resume forward &mdash; a
-              genuine evaluation of whether they can do the work{' '}
-              <em>at your specific stage of growth</em>.
+            Every candidate goes through the same rigorous process I use in my day job. Not a quick phone screen and a resume forward, but a genuine evaluation of whether they can do the work at your specific stage of growth.
             </p>
 
             <p className="reveal">
-              I source globally &mdash; South Africa, Philippines, Latin America,
-              Eastern Europe &mdash; because the best talent for DTC isn&rsquo;t
-              always in your zip code. But every hire comes with a{' '}
-              <span className="text-gold font-semibold">90-day guarantee</span>,
-              because I stand behind what I deliver.
+            I source globally because the best talent for DTC isn't always in your zip code. But every hire comes with a 90-day guarantee, because I stand behind what I deliver.
             </p>
           </div>
         </div>

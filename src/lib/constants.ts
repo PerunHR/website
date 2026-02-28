@@ -20,7 +20,7 @@ export const PROCESS_STEPS = [
     number: 2,
     title: 'Global Sourcing',
     description:
-      'Activate worldwide network: South Africa, Philippines, LatAm, Eastern Europe.',
+      'Activate worldwide network: North America, Asia, South Africa, Philippines, LatAm, Eastern Europe.',
   },
   {
     number: 3,
@@ -83,6 +83,21 @@ export const ROLES = [
     title: 'Copywriters',
     description: 'Direct response, VSLs, advertorials — not blog posts',
   },
+  {
+    title: 'Video Editors / VSL Creators',
+    description:
+      'Direct response video, UGC, performance creatives that drive ROAS',
+  },
+  {
+    title: 'Shopify Store Designers / Page Builders',
+    description:
+      'Conversion-optimized landing pages, product pages, GemPages/Replo builds',
+  },
+  {
+    title: 'Funnel Builders',
+    description:
+      'Sales funnels, checkout optimization, CheckoutChamp/ClickFunnels/Heyflow',
+  },
 ]
 
 export const PRICING_MODELS = [
@@ -94,20 +109,20 @@ export const PRICING_MODELS = [
   },
   {
     model: 'Retained Search',
-    investment: '$5-10K upfront + success fee',
+    investment: 'Upfront partial payment + success fee',
     bestFor: 'Executive / hard-to-fill',
     description: 'Dedicated priority search.',
   },
   {
     model: 'RPO',
-    investment: '$3-5K/month retainer',
+    investment: 'Monthly retainer',
     bestFor: 'Building a team (3+ hires)',
     description: 'Fractional Head of Talent.',
   },
 ]
 
 export const METRICS = [
-  { value: '100+', label: 'Candidates Screened' },
+  { value: '1000+', label: 'Candidates Screened' },
   { value: '8+', label: 'Countries Sourced From' },
   { value: '<10%', label: 'Hire Rate' },
   { value: '90-Day', label: 'Guarantee on Every Placement' },
