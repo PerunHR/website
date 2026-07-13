@@ -35,8 +35,7 @@ export function ProblemSection() {
 
           <div className="reveal pt-4 pl-6 border-l-2 border-gold">
             <p className="text-text-primary font-semibold text-lg sm:text-xl leading-relaxed">
-              I can. Because I&rsquo;m not just a recruiter &mdash; I&rsquo;m
-              currently the{' '}
+              I can. Because I wasn&rsquo;t just a recruiter. I was the{' '}
               <span className="text-gold">
                 Head of Talent for a US DTC brand
               </span>

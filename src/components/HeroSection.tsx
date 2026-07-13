@@ -32,7 +32,7 @@ export function HeroSection() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-gold/20 bg-gold-glow rounded-sm">
               <div className="w-1.5 h-1.5 rounded-full bg-gold" />
               <span className="text-gold text-xs font-semibold uppercase tracking-[0.2em]">
-                DTC Recruitment — By an Insider
+                DTC Recruitment: An Insider&rsquo;s Perspective
               </span>
             </div>
 
